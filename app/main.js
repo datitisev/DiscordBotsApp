@@ -17,7 +17,7 @@ settings.defaults({
 });
 
 // Views
-ipcMain.on('view/load', (event, url = `file://${__dirname}/app/index.html`) => {
+ipcMain.on('view/load', (event, url = `file://${__dirname}/public/index.html`) => {
   win.loadURL(url);
 });
 ipcMain.on('AddBot/OpenFileDialog', event => {
@@ -36,7 +36,7 @@ function createSplashWin () {
     show: false
   });
 
-  splashWin.loadURL(`file://${__dirname}/app/splash.html`);
+  splashWin.loadURL(`file://${__dirname}/public/splash.html`);
 
   splashWin.once('ready-to-show', () => {
     splashWin.show();
@@ -54,10 +54,10 @@ function createWindow () {
   });
 
   // and load the index.html of the app.
-  win.loadURL(`file://${__dirname}/app/index.html`);
+  win.loadURL(`file://${__dirname}/public/index.html`);
 
   // Open the DevTools.
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
 
   // Listen for a crash
   win.webContents.on('crash', console.log);
