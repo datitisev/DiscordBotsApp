@@ -42,6 +42,10 @@
         "type": "link",
         "path": "/Applications"
       }]
+    },
+    "linux": {
+      "target": "deb tar.xz",
+      "category": "Development"
     }
   }
 }
