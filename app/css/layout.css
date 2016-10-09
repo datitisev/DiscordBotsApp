@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.window-content {
+  padding-top: 20px;
+  width: 100%;
+  padding-left: 2.5%;
+}
+
+.Window--BotList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* TOOLBAR */
+.toolbar-header {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+.toolbar-header .title {
+  height: 30px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.ToolbarTitle--Actions {
+  -webkit-app-region: no-drag;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  display: inline;
+  text-align: left;
+}
+.ToolbarTitle--Actions .TitleActions {
+  font-size: 9pt;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.ToolbarTitle--Actions .TitleActions--Close {
+  border: 1px solid #e33e41;
+  background: #ff5c5c;
+}
+.ToolbarTitle--Actions .TitleActions--Close:active {
+  background: #c14645;
+  border-color: #b03537;
+}
+.ToolbarTitle--Actions .TitleActions--Minimize {
+  margin-left: 5px;
+  border: 1px solid #e09e3e;
+  background: #ffbd4c;
+}
+.ToolbarTitle--Actions .TitleActions--Minimize:active {
+  background: #c08e38;
+  border-color:#af7c33;
+}
+.ToolbarTitle--Actions .TitleActions--Maximize {
+  margin-left: 5px;
+  border: 1px solid #14ae46;
+  background: #00ca56;
+}
+.ToolbarTitle--Actions .TitleActions--Maximize:active {
+  background: #029740;
+  border-color: #128435;
+}
+
+/* BOT LIST */
+.BotList {
+  width: 100vw;
+  overflow: visible;
+}
+.BotList--Bot, .BotList--AddBot, .BotList--CreateBot {
+  height: 300px;
+  width: 27vw;
+  margin-right: 3vw;
+  margin-top: 20px;
+}
+.BotList--Bot .mdl-card__title {
+  color: #fff;
+  background: #46B6AC;
+  word-wrap: break-word;
+}
+.BotList--AddBot *, .BotList--CreateBot * {
+  cursor: pointer !important;
+}
+.BotList--AddBot h1, .BotList--CreateBot h1 {
+  text-align: center;
+  width: 100%;
+}
+
+/* ADD BOT */
+#AddBot, #AddBot--Form {
+  width: 100%;
+}
+#AddBot--Form .form-input {
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#AddBot--Form .form-input .form-group {
+  width: 28.66334vw;
+  margin-right: 2vw;
+}
+#AddBot--Form .form-submit {
+  height: 28px !important;
+  width: auto !important;
+  margin-right: auto !important;
+  display: block;
+  font-size: 12px;
+}
+
+/* BOT PAGE */
+.Window--BotPage {
+  width: 97.5%;
+}
+
+/* SPINNER */
+#loading-spinner {
+  z-index: 99999;
+  position: fixed;
+  width: 56px;
+  height: 56px;
+  top: 50%;
+  left: 50%;
+}
+#loading-spinner .mdl-spinner__circle {
+  border-width: 4px;
+}
+
+/* OTHER LAYOUT */
+a {
+  cursor: pointer;
+}
+
+input, textarea {
+  cursor: text;
+}

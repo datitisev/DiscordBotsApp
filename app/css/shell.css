@@ -1,0 +1,125 @@
+#shell {
+  width: 100%;
+  height: 500px;
+  overflow-x: scroll;
+  background: #000;
+  border-radius: 8px;
+  margin: 0 auto;
+  color: #383838;
+}
+
+#shell #upper {
+  background: #e5e5e5;
+  background: -webkit-linear-gradient(#e5e5e5 0%, #b0b0b0 100%);
+  background: linear-gradient(#e5e5e5 0%, #b0b0b0 100%);
+  background-image: -moz-linear-gradient(#e5e5e5 0%, #b0b0b0 100%);
+  -webkit-border-radius: 3px 3px 0px 0px;
+  -moz-border-radius: 3px 3px 0px 0px;
+  border-radius: 3px 3px 0px 0px;
+  height: 23px;
+  text-align: center;
+  padding-top: 5px;
+  border-bottom: 2px solid #333;
+}
+
+#shell .title {
+  margin-left: -70px;
+}
+
+#shell .button {
+  width: 12px;
+  height: 12px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  margin: 3px 3px 3px 3px;
+  float: left;
+}
+
+#shell .red {
+  background: #f04341;
+  border: 1px solid #eb1513;
+}
+
+#shell .yellow {
+  background: #f5b868;
+  border: 1px solid #f2a238;
+}
+
+#shell .green {
+  background: #96cf7d;
+  border: 1px solid #78c158;
+}
+
+#shell #main {
+  padding: 5px;
+  color: #c0c7c7;
+}
+#shell #main .fore {
+  color: #ff6c6b;
+}
+#shell #main .accent {
+  color: #00b5c3;
+}
+
+
+#shell #enter {
+  display: inline;
+  margin-left: .01em;
+  width: 100%;
+  height: 100%;
+}
+
+#shell #enter:focus {
+  outline: 0px solid transparent;
+}
+
+#shell #enter pre {
+  overflow: visible;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+#shell .inner-light-top {
+  position: relative;
+  z-index: 2;
+  margin: 0px 3px;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+}
+
+#shell .inner-light-bottom {
+  margin: -1px 3px;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1));
+  background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1));
+}
+
+#shell .inner-dark-top {
+  top: -10px;
+  height: 8px;
+  width: 10px;
+  border-radius: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+#shell .red .inner-dark-top {
+  background: rgba(235, 21, 19, 0.4);
+  margin: -5px 0px;
+}
+
+#shell .yellow .inner-dark-top {
+  background: rgba(242, 162, 56, 0.4);
+  margin: 3px 0px;
+}
+
+#shell .green .inner-dark-top {
+  background: rgba(120, 193, 88, 0.4);
+  margin: 3px 0px;
+}
