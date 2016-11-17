@@ -22,7 +22,7 @@
     "electron-settings": "^2.1.1",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
-    "react-mdl": "^1.7.1"
+    "react-mdl": "^1.8.0"
   },
   "build": {
     "appId": "sevillamartin.david.discordbotsapp",
